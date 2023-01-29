@@ -1,5 +1,7 @@
 # TextToSpeech-ChromeExtention
 
+Give a star⭐ if you like it.
+
 This is a simple chrome extention uploaded locally on the system browser.
 
 The thing you will have to do is select some paragraph of text <br>and just
