@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Text to speech",
+    "description": "Reads selected text aloud",
+    "version": "1.0",
+    "permissions": [
+        "contextMenus",
+        "activeTab",
+        "https://*/*",
+        "http://*/*"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
