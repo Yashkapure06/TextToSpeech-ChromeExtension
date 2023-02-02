@@ -7,7 +7,9 @@ function readText(info) {
     var text = info.selectionText;
     var msg = new SpeechSynthesisUtterance(text);
     var voices = window.speechSynthesis.getVoices();
-    console.log(voices)
-    msg.voice = voices[0];
-    window.speechSynthesis.speak(msg);
+    chrome.storage.sync.get({'voice':null,(value)=>{
+        msg.voice = voices[value ?? 0];
+        window.speechSynthesis.speak(msg);    
+    })
+    
 }
