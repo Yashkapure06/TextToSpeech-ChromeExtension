@@ -1,6 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "Text to speech",
+    "name": "Text to Speech",
+    "author": "Yashkapure06",
     "description": "Reads selected text aloud",
     "version": "1.0",
     "permissions": [
@@ -10,6 +11,9 @@
         "http://*/*",
         "storage"
     ],
+    "action": {
+        "default_popup": "popup.html"
+    },
     "background": {
         "scripts": ["background.js"]
     }
